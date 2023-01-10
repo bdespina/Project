@@ -1,6 +1,15 @@
 import matplotlib.pyplot as plt
-import pandas as pd
-from scipy import signal
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    out = (
+            f'All working good.<br>'
+            )
+    return out
 
 if __name__ == "__main__":
-    print("All working good")
+
+    app.run(host='0.0.0.0')
