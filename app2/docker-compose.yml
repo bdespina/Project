@@ -1,0 +1,9 @@
+version: "3"
+services:
+  main1:    
+    build: ./python
+    ports: - "8000:8000"
+
+  main2:
+    build: ./python
+    ports: - "8001:5432"
