@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     out = (
-        f'Example container application.<br>'
+        f'Example of a simple container application for the first question.<br>'
     )
     return out
  
